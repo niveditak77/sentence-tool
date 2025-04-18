@@ -1,0 +1,1091 @@
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+/* Center text container */
+.navbar-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-left: 4rem; /* Move text slightly to the right */
+}
+
+/* Optional: Add more spacing if needed */
+.navbar-text h1 {
+  margin-left: 1rem; /* Adjust this value for more or less space */
+}
+
+/* Navbar icon */
+.navbar-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-title {
+  transform: translateX(50px); /* Adjust this value as needed */
+}
+
+/* Optional: Add responsive control */
+@media (max-width: 768px) {
+  .navbar-title {
+    transform: translateX(-10px);
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Homepage container to hold all content */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+}
+
+/* Box container for content */
+.box-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the icon and text horizontally */
+  justify-content: flex-start; /* Align content to the top */
+  padding-top: 120px; /* Space below the navbar */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.filled-blank {
+display: inline-block;
+padding: 0.4rem 0.6rem;
+background-color: #f0f8ff;
+border-radius: 8px;
+margin: 0 2px;
+font-weight: 600;
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+}
+
+.animated-box {
+animation: pop-in 0.3s ease-out;
+}
+
+@keyframes pop-in {
+0% {
+  transform: scale(0.6);
+  opacity: 0;
+}
+100% {
+  transform: scale(1);
+  opacity: 1;
+}
+}
+
+/* Icon container */
+.icon-container {
+  margin-bottom: 1.5rem; /* Space between icon and text */
+  margin-top: 3rem;
+}
+
+/* Icon styling */
+.icon {
+  font-size: 3rem; /* Adjust icon size */
+  color: gray;
+  font-weight: bolder;
+}
+
+/* Main heading styling */
+.main-heading {
+  font-size: 2.2rem;
+  font-weight: 550;
+  color: #1f2937; /* Tailwind gray-800 */
+  font-family: 'Inter', sans-serif;
+  margin-top: 0; /* Remove any unwanted margin from the top */
+}
+
+/* Styling for the split sentence */
+.sentence-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.3rem;/* Space between the main heading and the sentence */
+}
+
+.sentence-part-one {
+  font-size: 1.3rem;
+  color: #4B5563; /* Tailwind gray-600 */
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.sentence-part-two {
+  font-size: 1.3rem;
+  color: #4B5563; /* Tailwind gray-600 */
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin-top: 0.5rem; /* Space between the first and second parts of the sentence */
+}
+
+/* Stats container for Time, Total Questions, Coins */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:2rem;
+}
+
+/* Stat items */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px; /* Space between each stat item */
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  color: #4B5563; /* Tailwind gray-600 */
+  font-weight: bold;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  color: #1f2937; /* Tailwind gray-800 */
+  margin-top: 0.5rem;
+}
+
+.vertical-line {
+  border-left: 2px solid #d1d5db; /* Light gray vertical line */
+  height: 50px;
+}
+
+/* Coin Icon Styling */
+.coin-icon {
+  font-size:0.9rem;
+  color: #f59e0b; /* Tailwind yellow-500 */
+  margin-right: 5px;
+}
+
+/* Coin count styling */
+.coin-count {
+  margin-top:8px;
+  font-size: 0.1rem;
+  color: #1f2937;
+}
+
+/* Stats container for Time, Total Questions, Coins */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Stat items */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 50px; 
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  color: #4B5563; /* Tailwind gray-600 */
+  font-weight: bold;
+  margin-top:-6px;
+}
+
+.stat-value {
+  font-size: 1.2rem;
+  color: #4B5563;
+  margin-top: 0.8rem;
+}
+
+.vertical-line {
+  border-left: 2px solid #d1d5db; /* Light gray vertical line */
+  height: 50px;
+}
+
+/* Coin item (coin icon + coin count) */
+/* Coin item (coin icon + coin count) */
+.coin-item {
+  display: flex;
+  align-items: center; /* Align coin icon and count horizontally */
+  justify-content: center; /* Center the icon and text together */
+}
+
+/* Coin icon styling */
+.coin-item .coin-icon {
+  font-size: 1.5rem; /* Adjust size of the coin icon */
+  color: #f59e0b; /* Tailwind yellow-500 */
+  margin-right: 8px; /* Space between the icon and number */
+}
+
+/* Coin count styling */
+.coin-item .coin-count {
+  font-size: 1.5rem;
+  color: gray;
+  margin-top: 0; /* Reset any top margin */
+}
+
+
+/* Buttons Section */
+.buttons-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the buttons */
+}
+
+.start-button,
+.back-button {
+  padding: 10px 30px; /* Increase the padding for larger width */
+  font-size: 1.2rem;
+  background-color: white;
+  color: blue;
+  border: 2px solid blue; /* Add blue border */
+  border-radius: 7px;
+  cursor: pointer;
+  width: 200px; /* Set a fixed width for both buttons */
+  text-align: center; /* Align text to the center */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.start-button:hover,
+.back-button:hover {
+  background-color: blue;
+  color: white; /* Text color changes to white on hover */
+  border-color: blue; /* Ensure the border stays blue */
+}
+
+
+/* Responsive adjustments for tablet and mobile devices */
+@media (max-width: 768px) {
+  .main-heading {
+      font-size: 1.75rem; /* Reduce font size for tablets */
+  }
+
+  .sentence-part-one,
+  .sentence-part-two {
+      font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .stats-container {
+      flex-direction: column; /* Stack stats vertically on smaller screens */
+  }
+
+  .stat-item {
+      margin: 10px 0;
+  }
+
+  .buttons-container {
+      flex-direction: column;
+  }
+
+  /* Hide vertical lines on smaller screens */
+  .vertical-line {
+      display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+      font-size: 1.5rem; /* Reduce font size for mobile */
+  }
+
+  .sentence-part-one,
+  .sentence-part-two {
+      font-size: 1.1rem; /* Reduce font size further for mobile */
+  }
+
+  .buttons-container {
+      gap: 10px;
+  }
+
+  /* Hide vertical lines on smaller screens */
+  .vertical-line {
+      display: none;
+  }
+}
+
+
+/* Global styles (optional) */
+.test-page-container {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+}
+
+.test-title {
+font-size: 2rem;
+font-weight: 600;
+margin-bottom: 20px;
+}
+
+.question-container {
+width: 100%;
+max-width: 800px;
+text-align: center;
+}
+
+
+
+.sentence {
+font-size: 1.25rem;
+margin-bottom: 20px;
+word-wrap: break-word;
+}
+
+.blank-space {
+font-weight: bold;
+border-bottom: 2px dashed #0070f3;
+cursor: pointer;
+}
+
+.word {
+font-weight: normal;
+}
+
+.options-container {
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-bottom: 20px;
+}
+
+.option-button {
+padding: 10px 20px;
+background-color: #f5f5f5;
+border: 1px solid #ddd;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+background-color: #0070f3;
+color: white;
+}
+
+.option-button.selected {
+background-color: #0070f3;
+color: white;
+}
+
+.timer-container {
+font-size: 1.1rem;
+margin-bottom: 20px;
+}
+
+.next-button-container {
+text-align: center;
+}
+
+.next-button {
+padding: 12px 24px;
+font-size: 1.1rem;
+background-color: #0070f3;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+transition: opacity 0.3s ease;
+}
+
+.next-button.disabled {
+opacity: 0.5;
+cursor: not-allowed;
+}
+
+.next-button.enabled:hover {
+background-color: #005bb5;
+}
+
+
+/*  */
+.question-mode {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .question-box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  position: relative;
+}
+ */
+
+ .question-box {
+  width: 60%; /* Increase the width */
+  height: 500px; /* Increase the height */
+  background-color: #f9fafb; /* Light background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for shadow effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.timer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.quit-button {
+  background-color: transparent;
+  border: none;
+  color: #e53935;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.question-body {
+  padding: 10px 0;
+}
+
+.question-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+}
+
+.option {
+  background-color: #f0f0f0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.option:hover {
+  background-color: #e0e0e0;
+}
+
+.next-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  float: right;
+}
+
+.quit-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.quit-confirm-box {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+}
+
+.quit-confirm-box .warning {
+  margin-top: 10px;
+  color: orange;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.quit-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.quit-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quit-buttons button:hover {
+  background-color: white;
+  color:rgb(63, 63, 244);
+}
+
+/* Styling for the options container to display options horizontally */
+.options-container {
+display: flex;
+flex-wrap: wrap;
+
+justify-content: center;
+margin-top: 1.5rem;
+}
+
+/* Option item styling (new additions) */
+.option-item {
+margin: 0.5rem;
+padding: 10px 20px;
+background-color: white;
+border: 1px solid gray;
+border-radius: 5px;
+cursor: pointer;
+color: gray;
+font-size: 1.2rem;
+
+transition: background-color 0.3s, color 0.3s;
+}
+
+.option-item:hover {
+background-color: #f0f0f0;
+color: black;
+}
+
+/* Selected option styling (new additions) */
+.option-item.selected {
+background-color: #d1d5db; /* Light gray */
+color: #1f2937;
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+width: 100%;
+height: 14px; /* A taller bar for better visibility */
+background-color: gray; /* Light gray background */
+border-radius: 15px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+position: relative;
+margin-bottom: 20px; /* Space below the bar */
+overflow: hidden; /* Ensures the bar content doesn’t overflow */
+}
+
+/* Progress Bar (Completed Section) */
+.completed-bar {
+height: 100%;
+background-color: #ff7f50; /* Coral orange for completed */
+transition: width 0.5s ease-in-out; /* Smooth width transition */
+border-radius: 15px 0 0 15px; /* Rounded corners on the left */
+}
+
+/* Progress Bar (Remaining Section) */
+.remaining-bar {
+height: 100%;
+background-color: gray; /* Light gray for remaining */
+transition: width 0.5s ease-in-out; /* Smooth width transition */
+border-radius: 0 15px 15px 0; /* Rounded corners on the right */
+}
+
+/* Text inside the Progress Bar */
+.progress-bar-text {
+position: absolute;
+top: 50%;
+right: 0%;
+transform: translate(-50%, -50%); /* Center text */
+font-size: 12px;
+font-weight: 600;
+color: whitesmoke;
+letter-spacing: 0.5px;
+transition: opacity 0.5s ease-in-out;
+opacity: 0.9;
+}
+/* Only applies blue background when questions are active */
+.question-background {
+background-color: #007bff; /* or any blue you like */
+min-height: 100vh;
+padding: 20px;
+}
+
+.question-bg {
+background-color: rgb(201, 195, 195); /* Light blue background (you can change to any color you prefer) */
+}
+
+
+
+
+
+
+
+
+
+.feedback-title {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.feedback-title h2 {
+  display: inline-block;
+  margin: 0;
+}
+
+.score-text,
+.score-breakdown {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+/* Circular Progress Bar */
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.circle .circle-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#4caf50 0%, #4caf50 0%, #ccc 0%);
+  transition: background 1s ease;
+}
+
+.circle .percentage-text {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.feedback-container {
+  text-align: left;
+  max-height: 80vh;
+  overflow-y: scroll;
+  padding: 1rem;
+  position: relative;
+}
+
+.feedback-container .feedback-question {
+  margin-bottom: 1rem;
+}
+
+.feedback-question.correct {
+  background-color: #d4edda;
+}
+
+.feedback-question.incorrect {
+  background-color: #f8d7da;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Add more styles as needed */
+.feedback-container { 
+  text-align: left;
+  min-height: 93vh; /* Use min-height instead of height */
+  overflow-y: auto;
+  padding: 1rem;
+  position: relative;
+  background: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color:whitesmoke;
+  margin-top: -75px; /* Remove or adjust negative margin */
+  cursor:pointer;
+}
+
+
+.score-text,
+.score-breakdown {
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.score-text {
+  font-size: 2.5rem; /* Large font size for score */
+  color: orange; /* Green color */
+  transition: all 0.5s ease;
+  cursor:pointer;
+}
+
+.score-breakdown {
+  font-size: 2rem; /* Slightly smaller font size for percentage */
+  color: orange; /* Blue color */
+  transition: all 0.5s ease;
+}
+
+.score-text:hover,
+.score-breakdown:hover {
+  font-size: 3rem; /* Increase font size on hover */
+  color: #ff9800; /* Change to orange on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style the feedback container */
+.feedback-title {
+  background: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Style for question content */
+.feedback-question {
+  width: 55%; /* Adjust to make it narrower */
+  margin: 1rem auto; /* Center it */
+  padding: 1.2rem;
+  border-radius: 30px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0px 4px rgb(241, 195, 109);
+
+  font-family:sans-serif;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  transition: all 0.5s ease; /* Smooth animation */
+}
+
+.feedback-question:hover {
+ 
+  transform: scale(2.5); /* Slight zoom effect */
+  box-shadow: 2px 0px 2px 0px rgb(247, 187, 78); /* Slightly deeper shadow */
+}
+
+.feedback-question.correct {
+  background-color:  rgb(236, 233, 233); /* Light green for correct answers */
+}
+
+.feedback-question.incorrect {
+  background-color: rgb(236, 233, 233); /* Light red for incorrect answers */
+}
+
+/* Style for buttons */
+.feedback-container .buttons-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-container .buttons-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Circular Progress Bar Styles */
+.progress-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.circle {
+  transform: rotate(-90deg); /* Rotate the circle to start the progress from the top */
+}
+
+.background {
+  fill: none;
+  stroke: #e6e6e6; /* Light grey background color */
+}
+
+.foreground {
+  fill: none;
+  stroke: #4caf50; /* Green color for the progress bar */
+  transition: stroke-dashoffset 0.5s ease; /* Smooth transition when the progress changes */
+}
+
+.score {
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+}
+
+.score-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.percentile-text {
+  font-size: 14px;
+  color: #555;
+}
+/* .feedback-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.feedback-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.score-section,
+.percentage-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.score-text,
+.percentage-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.react-circular-progressbar {
+  width: 100px;
+  height: 100px;
+}
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseShrink {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to feedback container and title */
+.feedback-container {
+  animation: fadeInSlideUp 1s ease-out;
+}
+
+.feedback-title {
+  animation: fadeInSlideUp 1s ease-out;
+}
+
+.score-text,
+.score-breakdown {
+  animation: bounceIn 1s ease-out;
+}
+
+.score-text:hover,
+.score-breakdown:hover {
+  animation: bounceIn 1s ease-out; /* Bounce animation on hover */
+}
+
+/* Button Shake Effect on Hover */
+.feedback-container .buttons-container button {
+  transition: transform 0.2s ease;
+}
+
+.feedback-container .buttons-container button:hover {
+  animation: shake 0.5s ease;
+  background-color: #0056b3;
+}
+
+/* Circular progress bar shrinking effect */
+.progress-container {
+  animation: pulseShrink 1.5s ease-in-out infinite;
+}
+
+.feedback-question {
+  animation: fadeInSlideUp 0.7s ease-out forwards;
+  opacity: 0; /* Fade in effect */
+}
+
+/* Stagger animation delay for each feedback-question */
+.feedback-question:nth-child(1) { animation-delay: 0.3s; }
+.feedback-question:nth-child(2) { animation-delay: 0.6s; }
+.feedback-question:nth-child(3) { animation-delay: 0.9s; }
+/* Add more staggered animation if more questions */
+
+.custom-button {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+
+.feedback-container::-webkit-scrollbar {
+  width: 11px;
+}
+
+.feedback-container::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 8px;
+}
+
+.feedback-container::-webkit-scrollbar-thumb {
+  background-color: orange; /* Blue thumb */
+  border-radius: 10px;
+  border: 2px solid #f1f1f1; /* Optional: creates a gap effect */
+}
+
+.feedback-container::-webkit-scrollbar-thumb:hover {
+  background-color: gray; /* Darker blue on hover */
+}
