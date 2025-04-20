@@ -1,8 +1,19 @@
 {
+  "name": "ca-monk-project",
+  "version": "1.0.0",
+  "description": "Sentence Construction Tool for CA MONK Frontend Internship",
+  "homepage": "https://niveditak77.github.io/sentence-tool",
+  "scripts": {
+    "predeploy": "npm run build --prefix sentence-tool",
+    "deploy": "gh-pages -d sentence-tool/dist"
+  },
   "dependencies": {
     "react-beautiful-dnd": "^13.1.1",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
     "react-router-dom": "^7.5.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
